@@ -19,7 +19,6 @@ base {
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
-// neoforge的设置，非必要不修改
 neoForge {
     version = project.neo_version
 
@@ -29,7 +28,6 @@ neoForge {
     }
 
     // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
-    // 暂时用不上，修改字段访问权限的
 
     runs {
         client {
@@ -74,17 +72,19 @@ configurations {
 }
 
 repositories {
-    // 这里写前置的存储库
-    // 前置是在下面的dependencies里定义的
+
     maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    // 这里写前置
-    implementation "com.github.ramixin:mixson-neoforge:${project.mixson_version}"
+    jarJar(implementation "com.github.ramixin:mixson-neoforge:${project.mixson_version}") {
+        version {
+            prefer "${project.mixson_version}"
+        }
+    }
+
 }
 
-// 所有用${}写的东西的定义都在这
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
             minecraft_version      : minecraft_version,
