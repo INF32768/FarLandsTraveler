@@ -30,6 +30,8 @@
   "farlandstraveler.configuration.remove_world_border" : "移除世界边界",
   "farlandstraveler.configuration.remove_coordinate_limits" : "移除世界界限",
   "farlandstraveler.configuration.enable_far_lands" : "启用边境之地（已废弃）",
+  "farlandstraveler.configuration.enable_sky_grid" : "启用天空网格",
+  "farlandstraveler.configuration.force_sky_grid" : "强制生成天空网格",
   "farlandstraveler.configuration.far_lands_distance" : "边境之地距离",
 
 
