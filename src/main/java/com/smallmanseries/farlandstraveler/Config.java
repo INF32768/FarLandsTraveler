@@ -20,6 +20,14 @@ public class Config {
             .comment("Now deprecated.")
             .define("enable_far_lands", false);
 
+    public static final ModConfigSpec.BooleanValue ENABLE_SKY_GRID = BUILDER
+            .comment("Enable the sky grid to generate in the Fringe Lands.")
+            .define("enable_sky_grid", false);
+
+    public static final ModConfigSpec.BooleanValue FORCE_SKY_GRID = BUILDER
+            .comment("Force the sky grid to generate even if the density value is clamped before interpolation.")
+            .define("force_sky_grid", false);
+
     public static final ModConfigSpec.IntValue FAR_LANDS_DISTANCE = BUILDER
             .comment("The distance between the generated location of the Far Lands and the origin of the world")
             .comment("Actually, it's the location of the first switch to the world generator")

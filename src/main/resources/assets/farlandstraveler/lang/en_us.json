@@ -30,6 +30,8 @@
   "farlandstraveler.configuration.remove_world_border" : "Remove world border",
   "farlandstraveler.configuration.remove_coordinate_limits" : "Remove coordinate limits",
   "farlandstraveler.configuration.enable_far_lands" : "Enable Far Lands (Deprecated)",
+  "farlandstraveler.configuration.enable_sky_grid" : "Enable Sky Grid",
+  "farlandstraveler.configuration.force_sky_grid" : "Force generate Sky Grid",
   "farlandstraveler.configuration.far_lands_distance" : "Far Lands Distance",
 
 
