@@ -11,5 +11,5 @@ public class FLTItems {
 
     // 物品列表
     public static final DeferredItem<Item> TEST_ITEM = ITEMS.registerItem("test_item", Item::new, new Item.Properties());
-    public static final DeferredItem<Item> TEST_ITEM1 = ITEMS.registerItem("test_item1", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> FAKE_CHUNK_MARKER = ITEMS.registerItem("fake_chunk_marker", FakeChunkMarkerItem::new, new Item.Properties());
 }

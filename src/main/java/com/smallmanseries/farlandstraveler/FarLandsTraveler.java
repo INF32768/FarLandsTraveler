@@ -5,10 +5,10 @@ import com.google.gson.JsonObject;
 import com.mojang.logging.LogUtils;
 import com.smallmanseries.farlandstraveler.common.block.FLTBlocks;
 import com.smallmanseries.farlandstraveler.common.item.FLTItems;
+import com.smallmanseries.farlandstraveler.common.misc.FLTAttachments;
 import com.smallmanseries.farlandstraveler.common.misc.FLTCreativeTabs;
 import com.smallmanseries.farlandstraveler.common.worldgen.FLTDensityFunctions;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.levelgen.NoiseRouter;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -29,6 +29,7 @@ public class FarLandsTraveler {
         FLTItems.ITEMS.register(modEventBus);
         FLTCreativeTabs.TABS.register(modEventBus);
         FLTDensityFunctions.FUNCTIONS.register(modEventBus);
+        FLTAttachments.ATTACHMENT_TYPES.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
@@ -40,8 +41,8 @@ public class FarLandsTraveler {
             JsonObject finalDensityModified = new JsonObject();
             finalDensityModified.addProperty("type", "minecraft:range_choice");
             finalDensityModified.addProperty("input", "farlandstraveler:far_lands/far_lands_generation_check");
-            finalDensityModified.addProperty("min_inclusive", -100);
-            finalDensityModified.addProperty("max_exclusive", 100);
+            finalDensityModified.addProperty("min_inclusive", -2);
+            finalDensityModified.addProperty("max_exclusive", 2);
             finalDensityModified.add("when_in_range", finalDensity);
             finalDensityModified.addProperty("when_out_of_range", "farlandstraveler:far_lands/far_lands");
             //基于距离（distance）切换其他密度函数

@@ -26,7 +26,7 @@ public class FLTCreativeTabs {
             // .withTabsAfter(ResourceLocation.fromNamespaceAndPath(FarLandsTraveler.MODID, "flt_blocks"))
             .displayItems(((itemDisplayParameters, output) -> {
                 output.accept(FLTItems.TEST_ITEM);
-                output.accept(FLTItems.TEST_ITEM1);
+                output.accept(FLTItems.FAKE_CHUNK_MARKER);
                 output.accept(FLTBlocks.TEST_BLOCK);
             }))
             .build());

@@ -25,7 +25,7 @@
   "item.farlandstraveler.far_lands_paeonia" : "Far Lands Paeonia",
 
   "item.farlandstraveler.test_item" : "qwe",
-  "item.farlandstraveler.test_item1" : "all",
+  "item.farlandstraveler.fake_chunk_marker" : "Fake Chunk Marker",
 
   "farlandstraveler.configuration.remove_world_border" : "Remove world border",
   "farlandstraveler.configuration.remove_coordinate_limits" : "Remove coordinate limits",

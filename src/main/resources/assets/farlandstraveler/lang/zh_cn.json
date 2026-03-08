@@ -25,7 +25,7 @@
   "item.farlandstraveler.far_lands_paeonia" : "边境芍药",
 
   "item.farlandstraveler.test_item" : "qwe",
-  "item.farlandstraveler.test_item1" : "all",
+  "item.farlandstraveler.fake_chunk_marker" : "假区块标记器",
 
   "farlandstraveler.configuration.remove_world_border" : "移除世界边界",
   "farlandstraveler.configuration.remove_coordinate_limits" : "移除世界界限",
