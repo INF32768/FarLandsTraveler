@@ -12,7 +12,6 @@
     "worldgen.BlendedNoiseMixin",
     "worldgen.ChunkMapMixin",
     "worldgen.DensityFunctionsClampMixin",
-    "worldgen.IBlendedNoiseMixin",
     "worldgen.NoiseInterpolatorMixin",
     "worldgen.PerlinNoiseMixin"
   ],
