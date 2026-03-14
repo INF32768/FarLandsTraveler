@@ -3,6 +3,7 @@ package com.smallmanseries.farlandstraveler.common.worldgen;
 import com.mojang.serialization.MapCodec;
 import com.smallmanseries.farlandstraveler.FarLandsTraveler;
 import com.smallmanseries.farlandstraveler.common.worldgen.densityfunctions.BlendedNoiseOverflowable;
+import com.smallmanseries.farlandstraveler.common.worldgen.densityfunctions.BlendedNoiseRepeating;
 import com.smallmanseries.farlandstraveler.common.worldgen.densityfunctions.VirtualDensityFunction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.DensityFunction;
@@ -15,5 +16,6 @@ public class FLTDensityFunctions {
     static {
         FUNCTIONS.register("virtual_density_function", () -> VirtualDensityFunction.DATA_CODEC);
         FUNCTIONS.register("old_blended_noise_overflowable", () -> BlendedNoiseOverflowable.DATA_CODEC);
+        FUNCTIONS.register("old_blended_noise_repeating", () -> BlendedNoiseRepeating.DATA_CODEC);
     }
 }
